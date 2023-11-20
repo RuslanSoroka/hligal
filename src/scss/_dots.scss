@@ -1,0 +1,19 @@
+.dots {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    column-gap: 15px;
+    justify-content: center;
+
+    &__btn {
+        width: 16px;
+        height: 16px;
+        background-color: #f5f5fa;
+        border-radius: 50px;
+        cursor: pointer;
+        border: none;
+
+        &--active {
+            background-color: #24a3ff;
+        }
+    }
+}

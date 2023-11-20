@@ -1,0 +1,53 @@
+.offer-services {
+    &__svg-wrapper {
+        width: 92px;
+        height: 92px;
+        background-color: #ffffff;
+        background-image: url(../img/it.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 24px;
+        margin-bottom: 30px;
+
+        &--01 {
+            background-image: url(../img/services-it.svg);
+        }
+
+        &--02 {
+            background-image: url(../img/services-portfolio.svg);
+        }
+
+        &--03 {
+            background-image: url(../img/services-structure.svg);
+        }
+
+        &--04 {
+            background-image: url(../img/services-hands.svg);
+        }
+
+        &--05 {
+            background-image: url(../img/services-protection.svg);
+        }
+
+        &--06 {
+            background-image: url(../img/services-judical.svg);
+        }
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 27px;
+        text-align: left;
+        color: #24a3ff;
+        margin-bottom: 15px;
+    }
+
+    &__description {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: left;
+        color: #ffffff;
+    }
+}

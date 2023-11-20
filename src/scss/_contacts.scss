@@ -1,0 +1,38 @@
+.contacts {
+    &__phone {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    &__adress {
+        position: relative;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__map {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #24a3ff;
+    }
+
+    &__mail {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+        color: #24a3ff;
+    }
+
+    &__copyright {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: $grey;
+    }
+}

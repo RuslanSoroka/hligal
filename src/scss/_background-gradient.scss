@@ -1,0 +1,42 @@
+.background-gradient {
+    background: url(../img/letter_h.svg) no-repeat center top,
+        linear-gradient(
+            228.57deg,
+            #323264 11.93%,
+            #323264 57.17%,
+            #643e72 87.46%
+        );
+    background-size: 523px 600px, cover;
+    border-radius: 0 0 12px 12px;
+    position: relative;
+
+    &::before {
+        content: "";
+        height: 10px;
+        background-color: #cacadb;
+        position: absolute;
+        bottom: -10px;
+        right: 20px;
+        left: 20px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    &::after {
+        content: "";
+        height: 10px;
+        background-color: #e7e7f2;
+        position: absolute;
+        bottom: -20px;
+        right: 40px;
+        left: 40px;
+        border-radius: 0 0 12px 12px;
+    }
+
+    @media (min-width: 768px) {
+        background-size: 893px 1024px, cover;
+    }
+
+    @media (min-width: 992px) {
+        background-size: 697px 799px, cover;
+    }
+}

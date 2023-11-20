@@ -1,0 +1,29 @@
+.publication {
+    padding: 30px 0;
+
+    &__grid-wrapper-card {
+        display: grid;
+        gap: 30px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: 768px) {
+        &__grid-wrapper-card {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: max-content max-content;
+            grid-template-areas:
+                "first second"
+                "third third";
+        }
+    }
+    @media (min-width: 1112px) {
+        &__grid-wrapper-card {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0 30px;
+            grid-template-areas: "first second third";
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.link-pages {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #24a3ff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+        border-bottom: 2px solid #24a3ff;
+        border-right: 2px solid #24a3ff;
+        position: absolute;
+        right: -8px;
+        top: 5px;
+        transform: rotate(319deg);
+    }
+}

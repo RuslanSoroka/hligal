@@ -1,0 +1,79 @@
+.company-slang {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 457px;
+    padding-bottom: 30px;
+    position: relative;
+
+    &__text {
+        max-width: 345px;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 46px;
+        color: $white;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        margin-bottom: 147px;
+        margin-left: 34px;
+    }
+
+    &__arrow {
+        border-bottom: 2px solid white;
+        border-right: 2px solid white;
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        transform: rotate(45deg);
+        bottom: calc(30px + 42px);
+        left: calc(50% - 21px);
+
+        &:hover {
+            border-color: $violet;
+        }
+
+        &::after {
+            content: "";
+            width: 42px;
+            height: 42px;
+            border: 2px solid $grey;
+            border-radius: 50px;
+            position: absolute;
+            top: -12px;
+            right: -18px;
+        }
+
+        &:hover:after {
+            border-color: $violet;
+        }
+    }
+
+    @media (min-width: 768px) {
+        & {
+            grid-template-columns: 1fr;
+            grid-template-rows: 801px;
+            padding-bottom: 60px;
+
+            &__text {
+                max-width: 800px;
+                margin: 0 0 202px;
+            }
+
+            &__arrow {
+                bottom: calc(60px + 42px);
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        & {
+            grid-template-columns: 1fr;
+            grid-template-rows: 645px;
+
+            &__text {
+                max-width: 800px;
+                margin: 50px 0 202px;
+            }
+        }
+    }
+}

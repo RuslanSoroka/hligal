@@ -1,0 +1,140 @@
+.footer {
+    padding: 30px 0;
+    border-top: 2px solid #e6e6f0;
+
+    &__contacts {
+        display: grid;
+        justify-items: center;
+        row-gap: 10px;
+    }
+
+    &__second-line {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & a {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__phone {
+        color: #46466e;
+    }
+
+    &__facebook path {
+        fill: #24a3ff;
+    }
+
+    &__adress {
+        color: #323264;
+    }
+
+    &__map {
+        margin-bottom: 11px;
+    }
+
+    &__copyright {
+        margin-top: 20px;
+    }
+
+    @media (min-width: 768px) {
+        &__contacts {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            grid-template-rows: repeat(3, max-content);
+            row-gap: 20px;
+            grid-template-areas:
+                "adress map"
+                "second-line second-line"
+                "copyright copyright";
+        }
+
+        &__adress {
+            grid-area: adress;
+            position: relative;
+            padding-right: 16px;
+            &::after {
+                content: "";
+                display: block;
+                width: 6px;
+                height: 6px;
+                background-color: $grey;
+                border-radius: 50px;
+                position: absolute;
+                right: 0;
+                top: 7px;
+            }
+        }
+
+        &__map {
+            grid-area: map;
+            margin: 0 0 0 10px;
+            justify-self: start;
+            align-self: center;
+        }
+
+        &__second-line {
+            grid-area: second-line;
+            flex-direction: row;
+            justify-self: start;
+
+            & a {
+                margin: 0 10px 0 0;
+            }
+        }
+
+        &__phone {
+            grid-area: phone;
+            position: relative;
+            padding: 0 16px;
+
+            &::before {
+                content: "";
+                display: block;
+                width: 6px;
+                height: 6px;
+                background-color: $grey;
+                border-radius: 50px;
+                position: absolute;
+                left: 0;
+                top: 7px;
+            }
+            &::after {
+                content: "";
+                display: block;
+                width: 6px;
+                height: 6px;
+                background-color: $grey;
+                border-radius: 50px;
+                position: absolute;
+                right: 0;
+                top: 7px;
+            }
+        }
+
+        &__copyright {
+            margin: 0;
+            grid-area: copyright;
+        }
+    }
+
+    @media (min-width: 992px) {
+        &__contacts {
+            grid-template-columns: max-content 1fr max-content;
+            grid-template-rows: repeat(2, min-content);
+            grid-template-areas:
+                "adress map copyright"
+                "second-line second-line second-line";
+            align-items: end;
+        }
+
+        &__facebook path:hover {
+            fill: $violet;
+        }
+
+        &__mail:hover {
+            color: $violet;
+        }
+    }
+}
